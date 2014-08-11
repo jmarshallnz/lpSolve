@@ -283,7 +283,7 @@ lp = make_lp ((int) 0, *x_count);
 if (lp == (lprec *) NULL)
     return;
 
-set_verbose (lp, 1); /* CRITICAL */
+set_verbose (lp, 6); /* FULL, aka shitloads */
 
 /* Set the direction. The default is minimize, but set it anyway. */
 if (*direction == 1)
@@ -532,7 +532,7 @@ lp = make_lp ((int) 0, *r_count * *c_count);
 if (lp == (lprec *) NULL)
     return;
 
-set_verbose (lp, 1); /* CRITICAL */
+set_verbose (lp, 6); /* FULL, aka shitloads */
 
 set_add_rowmode (lp, TRUE);
 /*
